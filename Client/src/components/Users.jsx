@@ -28,7 +28,11 @@ function Users(props) {
                 lastName = {user.name.last} 
                 eMail = {user.email} 
                 phone = {user.phone}
-                gender = {user.gender}/>
+                gender = {user.gender}
+                delete = {props.delete}
+                update = {props.update}
+                uuid = {user.login.uuid}
+                />
                 );
             })}
             </tbody>
